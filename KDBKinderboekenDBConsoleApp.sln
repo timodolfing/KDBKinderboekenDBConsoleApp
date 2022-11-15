@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDBKinderboekenDBConsoleApp", "KDBKinderboekenDBConsoleApp\KDBKinderboekenDBConsoleApp.csproj", "{0895832F-2ADF-469A-934A-17C10C1FABBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0895832F-2ADF-469A-934A-17C10C1FABBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0895832F-2ADF-469A-934A-17C10C1FABBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0895832F-2ADF-469A-934A-17C10C1FABBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0895832F-2ADF-469A-934A-17C10C1FABBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E51F9CD3-72D8-4A21-B21E-3444FE3CAE37}
+	EndGlobalSection
+EndGlobal
