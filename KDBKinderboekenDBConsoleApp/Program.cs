@@ -85,9 +85,7 @@ namespace KDBKinderboekenDBConsoleApp
 
             private static void AddWriter()
         {
-            Console.WriteLine("Een boek toevoegen");
-            Console.Write("Welk boek zoek je?");
-            string searchTerm = Console.ReadLine();
+            throw new NotImplementedException();
         }
 
         private static void SearchWriter()
@@ -102,15 +100,26 @@ namespace KDBKinderboekenDBConsoleApp
 
         private static void SearchBook()
         {
+            /**Eerst boekenlijst leegmaken**/
             bookList.Clear();
+
+            /**Dan gewenste bron opvragen bij gebruiker**/
             Console.WriteLine("Uit welke bron wil je de boeken halen?");
             Console.WriteLine("1: Uit de hardcoded applicatie");
             Console.WriteLine("2: Uit een sql database");
             string selectedDataSource = Console.ReadLine();
+
+            /**Nieuwe dataservice ophalen op basis van geselecteerde bron**/
             IBoekDataService boekDataService = bookDataFactory.GetBoekDataService(selectedDataSource);
+
+            /**Zoekterm opvragen**/
             Console.WriteLine("Welk boek wil je zoeken? Geef (een deel van) de titel");
             string searchTermBook = Console.ReadLine();
+
+            /**Zoekfunctie uitvoeren mbv ingevoerde zoekterm**/
             bookList.AddRange(boekDataService.SearchBooks(searchTermBook));
+
+            /**Resultaat printen naar console**/
             Console.WriteLine("Ik heb dit voor je gevonden:");
             foreach (var boek in bookList.OrderBy(Boek => Boek.Titel)) Console.WriteLine("Titel: " + boek.Titel);
             foreach (var boek in bookList.OrderBy(Boek => Boek.Titel)) Console.WriteLine("Cijfer: " + boek.Cijfer);
