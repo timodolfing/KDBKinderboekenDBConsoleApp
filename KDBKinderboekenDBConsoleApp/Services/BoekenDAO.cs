@@ -47,7 +47,7 @@ namespace KDBKinderboekenDBConsoleApp.Services
             throw new NotImplementedException();
         }
 
-        public int Insert(Boek boek)
+        public void AddBook(Boek boek)
         {
             throw new NotImplementedException();
         }

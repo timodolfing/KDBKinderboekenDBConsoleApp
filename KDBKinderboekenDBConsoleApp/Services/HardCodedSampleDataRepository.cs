@@ -11,6 +11,7 @@ namespace KDBKinderboekenDBConsoleApp.Services
     {
         public List<Boek> boekenlijst = new List<Boek>();
         public List<Boek> searchResult = new List<Boek>();
+        Boek boek = new Boek();
 
 
         public int Delete(Boek boek)
@@ -32,7 +33,7 @@ namespace KDBKinderboekenDBConsoleApp.Services
             throw new NotImplementedException();
         }
 
-        public int Insert(Boek boek)
+        public void AddBoook()
         {
             throw new NotImplementedException();
         }
@@ -57,6 +58,11 @@ namespace KDBKinderboekenDBConsoleApp.Services
         public int Update(Boek boek)
         {
             throw new NotImplementedException();
-        }        
+        }
+
+        public void AddBook(Boek boek)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

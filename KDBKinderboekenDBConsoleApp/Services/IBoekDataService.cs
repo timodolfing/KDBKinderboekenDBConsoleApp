@@ -12,7 +12,7 @@ namespace KDBKinderboekenDBConsoleApp.Services
         List<Boek> GetAllBooks();
         List<Boek> SearchBooks(string searchTerm);
         Boek GetBookByTitle(string Titel);
-        int Insert(Boek boek);
+        void AddBook(Boek boek);
         int Delete(Boek boek);
         int Update(Boek boek);
     }
